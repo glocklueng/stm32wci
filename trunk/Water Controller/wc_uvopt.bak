@@ -168,56 +168,7 @@
           <Name>-O207 -S0 -C0 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint>
-        <Bp>
-          <Number>0</Number>
-          <Type>0</Type>
-          <LineNumber>35</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218384</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\鹿陇脳梅\STM32\pro\Water Controller\src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\wc\src/main.c\35</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>60</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218494</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\鹿陇脳梅\STM32\pro\Water Controller\src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\wc\src/main.c\60</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>57</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218476</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\鹿陇脳梅\STM32\pro\Water Controller\src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\wc\src/main.c\57</Expression>
-        </Bp>
-      </Breakpoint>
+      <Breakpoint/>
       <WatchWindow1>
         <Ww>
           <count>0</count>
@@ -263,6 +214,11 @@
           <count>8</count>
           <WinNumber>1</WinNumber>
           <ItemText>loop</ItemText>
+        </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>dat</ItemText>
         </Ww>
       </WatchWindow1>
       <DebugFlag>
@@ -323,7 +279,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>174</TopLine>
+      <TopLine>168</TopLine>
       <CurrentLine>176</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\startup_stm32f4xx.s</PathWithFileName>
@@ -345,10 +301,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>2</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>41</TopLine>
-      <CurrentLine>63</CurrentLine>
+      <TopLine>22</TopLine>
+      <CurrentLine>26</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -367,12 +323,12 @@
       <GroupNumber>3</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>4</ColumnNumber>
+      <ColumnNumber>14</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>93</TopLine>
-      <CurrentLine>100</CurrentLine>
+      <TopLine>58</TopLine>
+      <CurrentLine>93</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\ds1302.c</PathWithFileName>
       <FilenameWithoutPath>ds1302.c</FilenameWithoutPath>
@@ -419,8 +375,8 @@
       <Focus>0</Focus>
       <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>22</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\seg_led.c</PathWithFileName>
       <FilenameWithoutPath>seg_led.c</FilenameWithoutPath>
@@ -467,8 +423,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>54</TopLine>
-      <CurrentLine>55</CurrentLine>
+      <TopLine>51</TopLine>
+      <CurrentLine>53</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -483,8 +439,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>207</TopLine>
-      <CurrentLine>210</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\system_stm32f4xx.c</PathWithFileName>
       <FilenameWithoutPath>system_stm32f4xx.c</FilenameWithoutPath>
@@ -619,8 +575,8 @@
       <Focus>0</Focus>
       <ColumnNumber>28</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>202</TopLine>
-      <CurrentLine>804</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_cryp.c</FilenameWithoutPath>
@@ -795,8 +751,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>424</TopLine>
-      <CurrentLine>426</CurrentLine>
+      <TopLine>415</TopLine>
+      <CurrentLine>419</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_gpio.c</FilenameWithoutPath>
@@ -907,8 +863,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1101</TopLine>
-      <CurrentLine>1102</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_rcc.c</FilenameWithoutPath>
@@ -1035,8 +991,8 @@
       <Focus>0</Focus>
       <ColumnNumber>3</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>202</TopLine>
-      <CurrentLine>228</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_wwdg.c</FilenameWithoutPath>
