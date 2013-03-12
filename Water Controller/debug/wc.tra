@@ -51,7 +51,7 @@
 ### ADS-LD Output File: '.\debug\wc.axf'
 ### ADS-LD Command File: '.\debug\wc.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\debug\wc.lnp', Handle=0x00000430
+### Creating CmdFile '.\debug\wc.lnp', Handle=0x000005B8
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\debug\wc.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

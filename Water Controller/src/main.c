@@ -45,7 +45,8 @@ int main(void)
 #endif
 	while(1)
 	{
-		//ds1302_write(0x80, 0x01);
+		ds1302_write(0x8e, 0x00);
+		ds1302_write(0x80, 0x00);
 		current_time = ds1302_read(0x81);
 		if (0 != (current_time & 0x80))
 		{

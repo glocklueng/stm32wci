@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\debug\wc.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\debug\wc.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 24]: Last Updated: Tue Mar 12 21:11:34 2013
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 24]: Last Updated: Tue Mar 12 22:32:41 2013
 <BR><P>
 <H3>Maximum Stack Usage =         84 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -583,11 +583,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[6c]"></a>main</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, main.o(.text))
+<P><STRONG><a name="[6c]"></a>main</STRONG> (Thumb, 160 bytes, Stack size 16 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = main &rArr; ds1302_write &rArr; ds1302_writebyte &rArr; ds1302_ioctl &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_init
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
@@ -598,7 +598,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[74]"></a>ds1302_init</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, ds1302.o(.text))
+<P><STRONG><a name="[74]"></a>ds1302_init</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, ds1302.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ds1302_init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
@@ -606,7 +606,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[77]"></a>ds1302_write</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, ds1302.o(.text))
+<P><STRONG><a name="[76]"></a>ds1302_write</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, ds1302.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = ds1302_write &rArr; ds1302_writebyte &rArr; ds1302_ioctl &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
@@ -616,7 +616,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[76]"></a>ds1302_read</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, ds1302.o(.text))
+<P><STRONG><a name="[77]"></a>ds1302_read</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, ds1302.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = ds1302_read &rArr; ds1302_readbyte &rArr; ds1302_ioctl &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
@@ -638,8 +638,8 @@ Global Symbols
 <P><STRONG><a name="[7c]"></a>delay_us</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, delay.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_readbyte
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_writebyte
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
 </UL>
 
 <P><STRONG><a name="[a7]"></a>Delay</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, delay.o(.text), UNUSED)
@@ -686,8 +686,8 @@ Global Symbols
 <P><STRONG><a name="[78]"></a>GPIO_WriteBit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_readbyte
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_writebyte
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -844,7 +844,7 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[7a]"></a>ds1302_ioctl</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, ds1302.o(.text))
+<P><STRONG><a name="[7a]"></a>ds1302_ioctl</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, ds1302.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ds1302_ioctl &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
@@ -853,18 +853,18 @@ Local Symbols
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_writebyte
 </UL>
 
-<P><STRONG><a name="[7b]"></a>ds1302_writebyte</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, ds1302.o(.text))
+<P><STRONG><a name="[7b]"></a>ds1302_writebyte</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, ds1302.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = ds1302_writebyte &rArr; ds1302_ioctl &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_ioctl
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_write
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
 </UL>
 
-<P><STRONG><a name="[7d]"></a>ds1302_readbyte</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, ds1302.o(.text))
+<P><STRONG><a name="[7d]"></a>ds1302_readbyte</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, ds1302.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = ds1302_readbyte &rArr; ds1302_ioctl &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
@@ -872,7 +872,7 @@ Local Symbols
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_ioctl
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds1302_read
 </UL>
 
 <P><STRONG><a name="[7f]"></a>SetSysClock</STRONG> (Thumb, 266 bytes, Stack size 12 bytes, system_stm32f4xx.o(.text))

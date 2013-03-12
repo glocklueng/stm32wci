@@ -60,7 +60,6 @@ static void ds1302_ioctl(u8 cmd)
     gpio.GPIO_Pin = D_SDAPin;
     gpio.GPIO_Speed = GPIO_Speed_50MHz;
     gpio.GPIO_OType = GPIO_OType_OD;
-		gpio.GPIO_PuPd = GPIO_PuPd_UP;
     if (cmd)
     {
         gpio.GPIO_Mode = GPIO_Mode_OUT;
@@ -90,7 +89,8 @@ static void ds1302_writebyte(u8 dat)
     u8 loop = 0;
 
 	  ds1302_ioctl(1);
-		GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_RESET);	
+		//GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_RESET);	
+		delay_us(2);
     for (; loop < 8; loop++)
     {
 				if (dat&0x01)
@@ -103,7 +103,7 @@ static void ds1302_writebyte(u8 dat)
 				}
         dat >>= 1;
         GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_SET);
-        delay_us(1);
+        delay_us(2);
         GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_RESET);
     }
     return;
@@ -126,12 +126,12 @@ Others:
 WCAPI void ds1302_write(u8 cmd, u8 dat)
 {
     GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_RESET);
-		delay_us(1);
+		delay_us(2);
     GPIO_WriteBit(D_RSTPort, D_RSTPin, Bit_SET);
     ds1302_writebyte(cmd);
     ds1302_writebyte(dat);
     GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_SET);
-	  delay_us(1);
+	  delay_us(2);
     GPIO_WriteBit(D_RSTPort, D_RSTPin, Bit_RESET);
 }
 /*********************************************************************
@@ -154,7 +154,7 @@ static u8 ds1302_readbyte(void)
     u8 dat = 0;
 
 	  ds1302_ioctl(0);
-    delay_us(3);
+		delay_us(2);
     for (; loop < 8; loop++)
     {
         dat >>= 1;
@@ -163,9 +163,8 @@ static u8 ds1302_readbyte(void)
             dat |= 0x80;
         }
         GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_SET);
-        delay_us(3);
+        delay_us(2);
         GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_RESET);
-        delay_us(3);
     }
     return dat;
 }
@@ -189,9 +188,10 @@ WCAPI u8 ds1302_read(u8 cmd)
     u8 dat = 0;
 
     GPIO_WriteBit(D_RSTPort, D_RSTPin, Bit_RESET);
+		delay_us(2);
     GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_RESET);
+		delay_us(2);
     GPIO_WriteBit(D_RSTPort, D_RSTPin, Bit_SET);
-	  delay_us(1);
     ds1302_writebyte(cmd);
     dat = ds1302_readbyte();
     GPIO_WriteBit(D_SCLKPort, D_SCLKPin, Bit_RESET);
