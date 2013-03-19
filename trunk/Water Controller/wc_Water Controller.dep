@@ -1,6 +1,6 @@
 Dependencies for Project 'wc', Target 'Water Controller': (DO NOT MODIFY !)
 F (.\startup_stm32f4xx.s)(0x513F3521)(--cpu Cortex-M4.fp -g --apcs=interwork -I "D:\Program Files\Keil\ARM\RV31\INC" -I "D:\Program Files\Keil\ARM\CMSIS\Include" -I "D:\Program Files\Keil\ARM\Inc\ST\STM32F4xx" --list ".\listings\startup_stm32f4xx.lst" --xref -o ".\debug\startup_stm32f4xx.o" --depend ".\debug\startup_stm32f4xx.d")
-F (.\src\main.c)(0x513F3C84)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\include -I..\STM32F4xx_StdPeriph_Driver\inc -I "D:\Program Files\Keil\ARM\RV31\INC" -I "D:\Program Files\Keil\ARM\CMSIS\Include" -I "D:\Program Files\Keil\ARM\Inc\ST\STM32F4xx" -DUSE_STDPERIPH_DRIVER -o ".\debug\main.o" --omf_browse ".\debug\main.crf" --depend ".\debug\main.d")
+F (.\src\main.c)(0x51486D36)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\include -I..\STM32F4xx_StdPeriph_Driver\inc -I "D:\Program Files\Keil\ARM\RV31\INC" -I "D:\Program Files\Keil\ARM\CMSIS\Include" -I "D:\Program Files\Keil\ARM\Inc\ST\STM32F4xx" -DUSE_STDPERIPH_DRIVER -o ".\debug\main.o" --omf_browse ".\debug\main.crf" --depend ".\debug\main.d")
 I (.\include\main.h)(0x513C3467)
 I (.\include\all_include.h)(0x513C5D7F)
 I (D:\Program Files\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
