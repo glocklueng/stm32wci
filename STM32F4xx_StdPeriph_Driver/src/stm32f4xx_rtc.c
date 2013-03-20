@@ -6,20 +6,21 @@
   * @date    25-August-2011
   * @brief   This file provides firmware functions to manage the following 
   *          functionalities of the Real-Time Clock (RTC) peripheral:
-  *           - Initialization
-  *           - Calendar (Time and Date) configuration
-  *           - Alarms (Alarm A and Alarm B) configuration
-  *           - WakeUp Timer configuration
-  *           - Daylight Saving configuration
-  *           - Output pin Configuration
-  *           - Coarse digital Calibration configuration
-  *           - Smooth digital Calibration configuration
-  *           - TimeStamp configuration
-  *           - Tampers configuration
-  *           - Backup Data Registers configuration
-  *           - Shift control synchronisation    
+  *           - Initialization初始化
+  *           - Calendar (Time and Date) configuration日历配置
+  *           - Alarms (Alarm A and Alarm B) configuration闹铃配置
+  *           - WakeUp Timer configuration唤醒时钟配置
+  *           - Daylight Saving configuration时区配置
+  *           - Output pin Configuration输出引脚配置
+  *           - Coarse digital Calibration configuration粗糙数字日历配置
+  *           - Smooth digital Calibration configuration平滑数字日历配置
+  *           - TimeStamp configuration时间戳配置
+  *           - Tampers configuration篡改配置
+  *           - Backup Data Registers configuration备份数据寄存器配置
+  *           - Shift control synchronisation    同步移位控制
   *           - RTC Tamper and TimeStamp Pins Selection and Output Type Config configuration
-  *           - Interrupts and flags management
+                时间戳和篡改引脚选择以及输出类型配置
+  *           - Interrupts and flags management中断及标志管理
   *
   *  @verbatim
   *
@@ -83,6 +84,7 @@
   *
   *          ===================================================================
   *                                   RTC Driver: how to use it
+                                      实时时钟驱动：如何使用
   *          ===================================================================
   *            - Enable the RTC domain access (see description in the section above)
   *            - Configure the RTC Prescaler (Asynchronous and Synchronous) and
