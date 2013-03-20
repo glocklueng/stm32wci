@@ -47,12 +47,15 @@
 typedef struct
 {
   uint32_t RTC_HourFormat;   /*!< Specifies the RTC Hour Format.
+                             小时进制12进制/24进制
                              This parameter can be a value of @ref RTC_Hour_Formats */
   
   uint32_t RTC_AsynchPrediv; /*!< Specifies the RTC Asynchronous Predivider value.
+                             RTC异步分频
                              This parameter must be set to a value lower than 0x7F */
   
   uint32_t RTC_SynchPrediv;  /*!< Specifies the RTC Synchronous Predivider value.
+                             RTC同步分频
                              This parameter must be set to a value lower than 0x7FFF */
 }RTC_InitTypeDef;
 
@@ -62,17 +65,21 @@ typedef struct
 typedef struct
 {
   uint8_t RTC_Hours;    /*!< Specifies the RTC Time Hour.
+                        时
                         This parameter must be set to a value in the 0-12 range
                         if the RTC_HourFormat_12 is selected or 0-23 range if
                         the RTC_HourFormat_24 is selected. */
 
   uint8_t RTC_Minutes;  /*!< Specifies the RTC Time Minutes.
+                        分
                         This parameter must be set to a value in the 0-59 range. */
   
   uint8_t RTC_Seconds;  /*!< Specifies the RTC Time Seconds.
+                        秒
                         This parameter must be set to a value in the 0-59 range. */
 
   uint8_t RTC_H12;      /*!< Specifies the RTC AM/PM Time.
+                        不同进制
                         This parameter can be a value of @ref RTC_AM_PM_Definitions */
 }RTC_TimeTypeDef; 
 
@@ -82,15 +89,19 @@ typedef struct
 typedef struct
 {
   uint8_t RTC_WeekDay; /*!< Specifies the RTC Date WeekDay.
+                        星期
                         This parameter can be a value of @ref RTC_WeekDay_Definitions */
   
   uint8_t RTC_Month;   /*!< Specifies the RTC Date Month (in BCD format).
+                        月
                         This parameter can be a value of @ref RTC_Month_Date_Definitions */
 
   uint8_t RTC_Date;     /*!< Specifies the RTC Date.
+                        日
                         This parameter must be set to a value in the 1-31 range. */
   
   uint8_t RTC_Year;     /*!< Specifies the RTC Date Year.
+                        年
                         This parameter must be set to a value in the 0-99 range. */
 }RTC_DateTypeDef;
 
