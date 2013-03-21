@@ -17,8 +17,9 @@ Description:stm32f4xx including all headers
 /* IDE provided headers */
 #include <stdio.h>
 #include <string.h>
-#include <stm32f4xx.h>
-#include <stm32f4xx_gpio.h>
+#include <stm32f4xx.h>      /*增加库数据结构体*/
+#include <stm32f4xx_gpio.h> /*增加gpio的库*/
+#include <stm32f4xx_spi.h>  /*增加SPI的库*/
 
 /* Water Controller System Headers */
 #include <main.h>
