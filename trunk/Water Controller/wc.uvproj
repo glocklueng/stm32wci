@@ -643,6 +643,21 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>communicate</GroupName>
+          <Files>
+            <File>
+              <FileName>485.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\485.c</FilePath>
+            </File>
+            <File>
+              <FileName>net.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\net.c</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
