@@ -43,6 +43,7 @@
 .\debug\net.o: .\include\system.h
 .\debug\net.o: .\include\delay.h
 .\debug\net.o: .\include\ds1302.h
+.\debug\net.o: .\include\pcf8563t.h
 .\debug\net.o: .\include\fm1702.h
 .\debug\net.o: .\include\flash.h
 .\debug\net.o: .\include\seg_led.h

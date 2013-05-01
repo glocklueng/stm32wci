@@ -43,6 +43,7 @@
 .\debug\fm1702.o: .\include\system.h
 .\debug\fm1702.o: .\include\delay.h
 .\debug\fm1702.o: .\include\ds1302.h
+.\debug\fm1702.o: .\include\pcf8563t.h
 .\debug\fm1702.o: .\include\fm1702.h
 .\debug\fm1702.o: .\include\flash.h
 .\debug\fm1702.o: .\include\seg_led.h

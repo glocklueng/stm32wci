@@ -43,6 +43,7 @@
 .\debug\flower.o: .\include\system.h
 .\debug\flower.o: .\include\delay.h
 .\debug\flower.o: .\include\ds1302.h
+.\debug\flower.o: .\include\pcf8563t.h
 .\debug\flower.o: .\include\fm1702.h
 .\debug\flower.o: .\include\flash.h
 .\debug\flower.o: .\include\seg_led.h

@@ -43,6 +43,7 @@
 .\debug\485.o: .\include\system.h
 .\debug\485.o: .\include\delay.h
 .\debug\485.o: .\include\ds1302.h
+.\debug\485.o: .\include\pcf8563t.h
 .\debug\485.o: .\include\fm1702.h
 .\debug\485.o: .\include\flash.h
 .\debug\485.o: .\include\seg_led.h

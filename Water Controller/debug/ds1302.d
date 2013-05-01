@@ -43,6 +43,7 @@
 .\debug\ds1302.o: .\include\system.h
 .\debug\ds1302.o: .\include\delay.h
 .\debug\ds1302.o: .\include\ds1302.h
+.\debug\ds1302.o: .\include\pcf8563t.h
 .\debug\ds1302.o: .\include\fm1702.h
 .\debug\ds1302.o: .\include\flash.h
 .\debug\ds1302.o: .\include\seg_led.h
