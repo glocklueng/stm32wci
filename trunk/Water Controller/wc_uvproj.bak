@@ -416,6 +416,11 @@
               <FileType>1</FileType>
               <FilePath>.\src\ds1302.c</FilePath>
             </File>
+            <File>
+              <FileName>pcf8563t.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\pcf8563t.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -640,6 +645,21 @@
               <FileName>stm32f4xx_wwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>communicate</GroupName>
+          <Files>
+            <File>
+              <FileName>485.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\485.c</FilePath>
+            </File>
+            <File>
+              <FileName>net.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\net.c</FilePath>
             </File>
           </Files>
         </Group>

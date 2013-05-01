@@ -1,20 +1,14 @@
 /*********************************************************************
 Copyright:Anxin Ming Co.,Ltd. 
 Author: Jason.anming
-Date:2013-3-10
-Description:stm32f4xx delay header
+Date:2013-4-21
+Description:stm32f4xx pcf8563t header
 **********************************************************************/
-#ifndef __DELAY_H
-#define __DELAY_H 		
+#ifndef _PCF8563T_H_
+#define _PCF8563T_H_
 
 #include <all_include.h>
 
-void delay_init(u8 SYSCLK);
-void delay_ms(u16 nms);
-void delay_us(u32 nus);
-void Delay(u32 count);
+u8 pcf8563t_init(void);
 
 #endif
-
-
-

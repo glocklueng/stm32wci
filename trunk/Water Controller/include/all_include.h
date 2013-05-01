@@ -27,6 +27,7 @@ Description:stm32f4xx including all headers
 #include <delay.h>
 
 #include <ds1302.h>
+#include <pcf8563t.h>
 #include <fm1702.h>
 #include <flash.h>
 #include <seg_led.h>

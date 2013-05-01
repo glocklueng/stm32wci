@@ -22,7 +22,8 @@ Others:
 **********************************************************************/
 //#define _DS1302_DEBUG_
 #define _GPIO_DEBUG_
-#define _RTC_DEBUG_
+//#define _RTC_DEBUG_
+#define _PCF8563T_DEBUG_
 u8 current_time = 0;
 int main(void)
 {
@@ -133,6 +134,11 @@ int main(void)
 		printf("date = %d	%d:%d:%d\n", rtcd.RTC_WeekDay, 
 					rtcd.RTC_Year, rtcd.RTC_Month, rtcd.RTC_Date);
 #endif
+
+
+#endif
+#ifdef _PCF8563T_DEBUG_
+        pcf8563t_init();
 #endif
 	}
 	
